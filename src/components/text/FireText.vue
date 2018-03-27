@@ -8,7 +8,7 @@
 export default {
   name: 'FireText',
   props: ['theme'],
-  data () {
+  data() {
     return {}
   },
   computed: {
@@ -28,8 +28,8 @@ h1 {
   display: inline-block;
   margin: 0;
   padding-top: 0.66em;
-
   -webkit-text-stroke-width: 1px;
+  z-index: 0;
 }
 
 h1:after {

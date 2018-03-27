@@ -5,12 +5,29 @@
     <h1>Marquee</h1>
     <marquee behaviour="scroll" delay="3000">SCROLL</marquee>
     <marquee behaviour="bounce" delay="3000">BOUNCE</marquee>
+    <h1>Tile Background</h1>
+    <tile-background theme="space">
+      <div class="tile-bg">SPACE</div>
+    </tile-background>
+    <tile-background theme="water">
+      <div class="tile-bg"><fire-text>WATER</fire-text></div>
+    </tile-background>
+    <tile-background theme="clouds">
+      <div class="tile-bg">CLOUDS</div>
+    </tile-background>
+    <tile-background theme="marble">
+      <div class="tile-bg">MARBLE</div>
+    </tile-background>
+    <tile-background theme="off-rock">
+      <div class="tile-bg">OFF ROCK</div>
+    </tile-background>
   </div>
 </template>
 
 <script>
 import FireText from './text/FireText'
 import Marquee from './text/Marquee'
+import TileBackground from './image/TileBackground'
 export default {
   name: 'WebPrevious',
   data() {
@@ -18,7 +35,8 @@ export default {
   },
   components: {
     FireText,
-    Marquee
+    Marquee,
+    TileBackground
   }
 }
 </script>
@@ -35,5 +53,9 @@ li {
 }
 a {
   color: #42b983;
+}
+.tile-bg {
+  height: 500px;
+  color: white;
 }
 </style>
