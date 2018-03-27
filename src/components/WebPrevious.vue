@@ -5,6 +5,9 @@
     <h1>Marquee</h1>
     <marquee behaviour="scroll" delay="3000">SCROLL</marquee>
     <marquee behaviour="bounce" delay="3000">BOUNCE</marquee>
+    <h1>Blink</h1>
+    <blink delay="1000">Here's some blinking text!!!!1!</blink>
+    <blink delay="2000"><fire-text>YES YOU CAN HAZ BLINKING FIRE</fire-text></blink>
     <h1>Tile Background</h1>
     <tile-background theme="space">
       <div class="tile-bg">SPACE</div>
@@ -27,6 +30,7 @@
 <script>
 import FireText from './text/FireText'
 import Marquee from './text/Marquee'
+import Blink from './text/Blink'
 import TileBackground from './image/TileBackground'
 export default {
   name: 'WebPrevious',
@@ -36,6 +40,7 @@ export default {
   components: {
     FireText,
     Marquee,
+    Blink,
     TileBackground
   }
 }
