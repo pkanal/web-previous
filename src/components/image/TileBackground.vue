@@ -24,7 +24,7 @@ export default {
       const backgroundImages = {
         [this.THEMES.SPACE]: 'space.gif',
         [this.THEMES.CLOUDS]: 'clouds.jpg',
-        [this.THEMES.OFF_ROCK]: 'off-rock.jpg',
+        [this.THEMES.OFF_ROCK]: 'off-rock.gif',
         [this.THEMES.WATER]: 'water.png',
         [this.THEMES.MARBLE]: 'marble.jpg'
       }
