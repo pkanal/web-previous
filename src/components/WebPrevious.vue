@@ -3,14 +3,16 @@
     <h1>Fire Text</h1>
     <fire-text>FIRE</fire-text>
     <h1>Marquee</h1>
-    <marquee behaviour="scroll" delay="3000">SCROLL</marquee>
-    <marquee behaviour="bounce" delay="3000">BOUNCE</marquee>
+    <div class="marquee-example">
+      <marquee behaviour="scroll" delay="3000"><h1>SCROLL</h1></marquee>
+      <marquee behaviour="bounce" delay="3000"><h1>BOUNCE</h1></marquee>
+    </div>
     <h1>Blink</h1>
     <blink delay="1000">Here's some blinking text!!!!1!</blink>
     <blink delay="2000"><fire-text>YES YOU CAN HAZ BLINKING FIRE</fire-text></blink>
     <h1>Tile Background</h1>
     <tile-background theme="space">
-      <div class="tile-bg">SPACE</div>
+      <div class="tile-bg"><marquee behaviour="bounce" delay="2000"><fire-text theme="light">SPACE</fire-text></marquee></div>
     </tile-background>
     <tile-background theme="water">
       <div class="tile-bg"><fire-text>WATER</fire-text></div>
@@ -62,5 +64,9 @@ a {
 .tile-bg {
   height: 500px;
   color: white;
+}
+.marquee-example {
+  width: 50%;
+  margin: auto;
 }
 </style>

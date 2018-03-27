@@ -1,8 +1,6 @@
 <template>
-  <div class="marquee">
-    <p v-bind:class="behaviour" v-bind:style="{ animation: animation }">
-      <slot></slot>
-    </p>
+  <div class="marquee" v-bind:class="behaviour" v-bind:style="{ animation: animation }">
+    <slot></slot>
   </div>
 </template>
 
@@ -37,7 +35,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 .marquee {
-  height: 50px;
   overflow: hidden;
   position: relative;
 }
