@@ -8,7 +8,7 @@
       <marquee behaviour="bounce" delay="3000"><h1>BOUNCE</h1></marquee>
     </div>
     <h1>Blink</h1>
-    <blink delay="1000">Here's some blinking text!!!!1!</blink>
+    <blink delay="200">Here's some blinking text!!!!1!</blink>
     <blink delay="2000"><fire-text>YES YOU CAN HAZ BLINKING FIRE</fire-text></blink>
     <h1>Tile Background</h1>
     <tile-background theme="space">
@@ -18,7 +18,10 @@
       <div class="tile-bg"><fire-text>WATER</fire-text></div>
     </tile-background>
     <tile-background theme="clouds">
-      <div class="tile-bg">CLOUDS</div>
+      <div class="tile-bg">
+        <blink delay="300">CLOUDS</blink>
+        <body-text theme="wise">Hi hello this is some v compelling reading</body-text>
+      </div>
     </tile-background>
     <tile-background theme="marble">
       <div class="tile-bg">MARBLE</div>
@@ -34,6 +37,7 @@ import FireText from './text/FireText'
 import Marquee from './text/Marquee'
 import Blink from './text/Blink'
 import TileBackground from './image/TileBackground'
+import BodyText from './text/BodyText'
 export default {
   name: 'WebPrevious',
   data() {
@@ -43,7 +47,8 @@ export default {
     FireText,
     Marquee,
     Blink,
-    TileBackground
+    TileBackground,
+    BodyText
   }
 }
 </script>
