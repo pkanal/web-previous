@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import WebPrevious from '@/components/WebPrevious'
+import WebPrevious from '@/pages/WebPrevious'
 
 Vue.use(Router)
 

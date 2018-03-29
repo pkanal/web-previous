@@ -33,11 +33,11 @@
 </template>
 
 <script>
-import FireText from './text/FireText'
-import Marquee from './text/Marquee'
-import Blink from './text/Blink'
-import TileBackground from './image/TileBackground'
-import BodyText from './text/BodyText'
+import FireText from '../components/text/FireText'
+import Marquee from '../components/text/Marquee'
+import Blink from '../components/text/Blink'
+import TileBackground from '../components/image/TileBackground'
+import BodyText from '../components/text/BodyText'
 export default {
   name: 'WebPrevious',
   data() {
