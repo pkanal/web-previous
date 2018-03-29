@@ -7,6 +7,11 @@
       <marquee behaviour="scroll" delay="3000"><h1>SCROLL</h1></marquee>
       <marquee behaviour="bounce" delay="3000"><h1>BOUNCE</h1></marquee>
     </div>
+    <page-divider theme="rainbow"></page-divider>
+    <page-divider theme="butterfly"></page-divider>
+    <page-divider theme="fire"></page-divider>
+    <page-divider theme="star"></page-divider>
+    <page-divider theme="snowflake"></page-divider>
     <h1>Blink</h1>
     <blink delay="200">Here's some blinking text!!!!1!</blink>
     <blink delay="2000"><fire-text>YES YOU CAN HAZ BLINKING FIRE</fire-text></blink>
@@ -40,6 +45,7 @@ import Blink from '../components/text/Blink'
 import TileBackground from '../components/image/TileBackground'
 import BodyText from '../components/text/BodyText'
 import HeaderText from '../components/text/HeaderText'
+import PageDivider from '../components/PageDivider'
 
 export default {
   name: 'WebPrevious',
@@ -52,7 +58,8 @@ export default {
     Blink,
     TileBackground,
     BodyText,
-    HeaderText
+    HeaderText,
+    PageDivider
   }
 }
 </script>

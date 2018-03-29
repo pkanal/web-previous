@@ -8,11 +8,11 @@
 export default {
   name: 'Blink',
   props: ['delay'],
-  data() {
+  data () {
     return {}
   },
   computed: {
-    animation() {
+    animation () {
       return `blink ${this.delay}ms linear infinite`
     }
   }

@@ -8,7 +8,7 @@
 export default {
   name: 'TileBackground',
   props: ['theme'],
-  data() {
+  data () {
     return {
       THEMES: {
         SPACE: 'space',
@@ -20,7 +20,7 @@ export default {
     }
   },
   computed: {
-    image() {
+    image () {
       const backgroundImages = {
         [this.THEMES.SPACE]: 'space.gif',
         [this.THEMES.CLOUDS]: 'clouds.jpg',
@@ -31,7 +31,7 @@ export default {
       // need to use require here to make sure the file gets processed by webpack
       return require(`../../assets/${backgroundImages[this.theme]}`)
     },
-    backgroundImage() {
+    backgroundImage () {
       return `url('${this.image}')`
     }
   }

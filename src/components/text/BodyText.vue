@@ -15,7 +15,7 @@ export default {
       default: 'fun'
     }
   },
-  data() {
+  data () {
     return {
       THEMES: {
         FUN: 'fun', // comic sans
@@ -26,7 +26,7 @@ export default {
     }
   },
   computed: {
-    fontFamily() {
+    fontFamily () {
       const fonts = {
         [this.THEMES.FUN]: 'Comic Sans MS, Comic Sans',
         [this.THEMES.PROFESSIONAL]: 'Times New Roman',

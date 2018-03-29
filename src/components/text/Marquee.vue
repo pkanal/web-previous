@@ -8,7 +8,7 @@
 export default {
   name: 'Marquee',
   props: ['behaviour', 'delay'],
-  data() {
+  data () {
     return {
       BEHAVIOURS: {
         SCROLL: 'scroll',
@@ -17,7 +17,7 @@ export default {
     }
   },
   computed: {
-    animation() {
+    animation () {
       const animations = {
         [this.BEHAVIOURS.SCROLL]: `${this.BEHAVIOURS.SCROLL} ${
           this.delay

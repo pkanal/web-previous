@@ -8,7 +8,7 @@
 export default {
   name: 'FireText',
   props: ['theme'],
-  data() {
+  data () {
     return {}
   },
   computed: {
@@ -37,7 +37,7 @@ h1:after {
   display: block;
   width: 100%;
   height: 100%;
-  background: url('../../assets/fire.gif') repeat-x top;
+  background: url('../../assets/animated/fire.gif') repeat-x top;
   background-size: 2.25em;
   position: absolute;
   top: 0;
