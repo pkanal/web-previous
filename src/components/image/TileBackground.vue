@@ -26,7 +26,7 @@ export default {
         [this.THEMES.CLOUDS]: 'clouds.jpg',
         [this.THEMES.OFF_ROCK]: 'off-rock.gif',
         [this.THEMES.WATER]: 'water.png',
-        [this.THEMES.MARBLE]: 'marble.jpg'
+        [this.THEMES.MARBLE]: 'marble-light.gif'
       }
       // need to use require here to make sure the file gets processed by webpack
       return require(`../../assets/${backgroundImages[this.theme]}`)

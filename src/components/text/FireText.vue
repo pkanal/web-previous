@@ -37,7 +37,8 @@ h1:after {
   display: block;
   width: 100%;
   height: 100%;
-  background: url('../../assets/animated/fire.gif') repeat-x top;
+  background: url('../../assets/animated/fire.gif') top;
+  background-repeat: repeat-x; /* TODO: change to round */
   background-size: 2.25em;
   position: absolute;
   top: 0;
