@@ -19,7 +19,7 @@
     </tile-background>
     <tile-background theme="clouds">
       <div class="tile-bg">
-        <blink delay="300">CLOUDS</blink>
+        <blink delay="300"><header-text colour="magenta" theme="wise">CLOUDS</header-text></blink>
         <body-text theme="wise">Hi hello this is some v compelling reading</body-text>
       </div>
     </tile-background>
@@ -33,11 +33,14 @@
 </template>
 
 <script>
+
 import FireText from '../components/text/FireText'
 import Marquee from '../components/text/Marquee'
 import Blink from '../components/text/Blink'
 import TileBackground from '../components/image/TileBackground'
 import BodyText from '../components/text/BodyText'
+import HeaderText from '../components/text/HeaderText'
+
 export default {
   name: 'WebPrevious',
   data() {
@@ -48,7 +51,8 @@ export default {
     Marquee,
     Blink,
     TileBackground,
-    BodyText
+    BodyText,
+    HeaderText
   }
 }
 </script>
