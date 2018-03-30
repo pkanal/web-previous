@@ -1,5 +1,5 @@
 <template>
-  <h1 v-bind:class="{ light: lightTheme, dark: darkTheme }">
+  <h1 class="wbpv-fire-text" v-bind:class="theme">
     <slot></slot>
   </h1>
 </template>
@@ -10,22 +10,17 @@ export default {
   props: {
     theme: {
       type: String,
-      default: 'light'
+      default: 'dark'
     }
   },
   data () {
     return {}
-  },
-  computed: {
-    lightTheme: () => this.theme === 'light',
-    darkTheme: () => this.theme !== 'light'
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h1 {
+<style>
+.wbpv-fire-text {
   font-family: impact;
   text-transform: uppercase;
   font-size: 4rem;
@@ -37,7 +32,7 @@ h1 {
   z-index: 0;
 }
 
-h1:after {
+.wbpv-fire-text:after {
   content: '';
   display: block;
   width: 100%;
@@ -51,11 +46,11 @@ h1:after {
   z-index: -1;
 }
 
-.dark {
+.wbpv-fire-text.dark {
   color: black;
   -webkit-text-stroke-color: white;
 }
-.light {
+.wbpv-fire-text.light {
   color: white;
   -webkit-text-stroke-color: black;
 }
