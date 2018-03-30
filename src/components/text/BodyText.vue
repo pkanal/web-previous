@@ -1,12 +1,12 @@
 <template>
-  <p class="body-text" v-bind:style="{ color: colour, fontFamily: fontFamily}"><slot></slot></p>
+  <p class="body-text" v-bind:style="{ color: color, fontFamily: fontFamily}"><slot></slot></p>
 </template>
 
 <script>
 export default {
   name: 'BodyText',
   props: {
-    colour: {
+    color: {
       type: String,
       default: 'yellow'
     },

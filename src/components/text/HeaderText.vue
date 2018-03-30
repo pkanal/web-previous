@@ -1,12 +1,12 @@
 <template>
-  <h1 v-bind:style="{ color: colour, fontFamily: fontFamily}"><slot></slot></h1>
+  <h1 v-bind:style="{ color: color, fontFamily: fontFamily}"><slot></slot></h1>
 </template>
 
 <script>
 export default {
   name: 'HeaderText',
   props: {
-    colour: {
+    color: {
       type: String,
       default: 'yellow'
     },
