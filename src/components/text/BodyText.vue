@@ -21,7 +21,7 @@ export default {
         FUN: 'fun', // comic sans
         PROFESSIONAL: 'professional', // times new roman
         COOL: 'cool', // verdana
-        WISE: 'wise' // papyrus
+        FANTASY: 'fantasy' // papyrus
       }
     }
   },
@@ -31,7 +31,7 @@ export default {
         [this.THEMES.FUN]: 'Comic Sans MS, Comic Sans',
         [this.THEMES.PROFESSIONAL]: 'Times New Roman',
         [this.THEMES.COOL]: 'Verdana, Geneva, sans-serif',
-        [this.THEMES.WISE]: 'Papyrus, fantasy'
+        [this.THEMES.FANTASY]: 'Papyrus, fantasy'
       }
 
       return fonts[this.theme]

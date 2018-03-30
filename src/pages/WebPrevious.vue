@@ -7,6 +7,7 @@
       <marquee behaviour="scroll" delay="3000"><h1>SCROLL</h1></marquee>
       <marquee behaviour="bounce" delay="3000"><h1>BOUNCE</h1></marquee>
     </div>
+
     <page-divider theme="rainbow"></page-divider>
     <page-divider theme="butterfly"></page-divider>
     <page-divider theme="fire"></page-divider>
@@ -18,26 +19,29 @@
     <h1>Tile Background</h1>
 
     <tile-background theme="space">
-      <div class="tile-bg"><marquee behaviour="bounce" delay="2000"><fire-text theme="light">SPACE</fire-text></marquee></div>
+      <marquee behaviour="bounce" delay="2000"><fire-text theme="light">SPACE</fire-text></marquee>
+      <under-construction></under-construction>
     </tile-background>
 
     <tile-background theme="water">
-      <div class="tile-bg"><fire-text>WATER</fire-text></div>
+      <fire-text>WATER</fire-text>
+      <under-construction theme="cool"></under-construction>
     </tile-background>
 
     <tile-background theme="clouds">
-      <div class="tile-bg">
-        <blink delay="300"><header-text colour="magenta" theme="wise">CLOUDS</header-text></blink>
-        <body-text theme="wise">Hi hello this is some v compelling reading</body-text>
-      </div>
+      <blink delay="300"><header-text colour="magenta" theme="fantasy">CLOUDS</header-text></blink>
+      <body-text theme="fantasy">Hi hello this is some v compelling reading</body-text>
+      <under-construction theme="fantasy"></under-construction>
     </tile-background>
 
     <tile-background theme="marble">
       <div class="tile-bg">MARBLE</div>
+      <under-construction theme="professional"></under-construction>
     </tile-background>
 
     <tile-background theme="off-rock">
       <div class="tile-bg">OFF ROCK</div>
+      <under-construction theme="professional"></under-construction>
     </tile-background>
 
     <frame-container>
@@ -83,6 +87,7 @@ import BodyText from '../components/text/BodyText'
 import HeaderText from '../components/text/HeaderText'
 import PageDivider from '../components/PageDivider'
 import FrameContainer from '../components/FrameContainer.vue'
+import UnderConstruction from '../components/image/UnderConstruction.vue'
 
 export default {
   name: 'WebPrevious',
@@ -90,6 +95,7 @@ export default {
     return {}
   },
   components: {
+    UnderConstruction,
     FrameContainer,
     FireText,
     Marquee,
