@@ -7,7 +7,12 @@
 <script>
 export default {
   name: 'FireText',
-  props: ['theme'],
+  props: {
+    theme: {
+      type: String,
+      default: 'light'
+    }
+  },
   data () {
     return {}
   },

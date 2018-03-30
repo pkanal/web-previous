@@ -16,24 +16,59 @@
     <blink delay="200">Here's some blinking text!!!!1!</blink>
     <blink delay="2000"><fire-text>YES YOU CAN HAZ BLINKING FIRE</fire-text></blink>
     <h1>Tile Background</h1>
+
     <tile-background theme="space">
       <div class="tile-bg"><marquee behaviour="bounce" delay="2000"><fire-text theme="light">SPACE</fire-text></marquee></div>
     </tile-background>
+
     <tile-background theme="water">
       <div class="tile-bg"><fire-text>WATER</fire-text></div>
     </tile-background>
+
     <tile-background theme="clouds">
       <div class="tile-bg">
         <blink delay="300"><header-text colour="magenta" theme="wise">CLOUDS</header-text></blink>
         <body-text theme="wise">Hi hello this is some v compelling reading</body-text>
       </div>
     </tile-background>
+
     <tile-background theme="marble">
       <div class="tile-bg">MARBLE</div>
     </tile-background>
+
     <tile-background theme="off-rock">
       <div class="tile-bg">OFF ROCK</div>
     </tile-background>
+
+    <frame-container>
+      <tile-background theme="water" slot="frame-content">
+        <body-text>
+          <ul>
+            <li>Welcome</li>
+            <li>To</li>
+            <li>My</li>
+            <li>Personal</li>
+            <li>Homepage</li>
+            <li>!!!!!!</li>
+            <li>Please</li>
+            <li>Have</li>
+            <li>Fun</li>
+          </ul>
+        </body-text>
+      </tile-background>
+      <tile-background theme="clouds" slot="main-content">
+        <body-text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusamus animi corporis cum deserunt dolor enim, et illo ipsa minus tempora unde vero? Assumenda cupiditate illum nemo quos voluptatem.</body-text>
+      </tile-background>
+    </frame-container>
+
+    <frame-container direction="right">
+      <tile-background theme="space" slot="frame-content">
+        <body-text>My menu!</body-text>
+      </tile-background>
+      <tile-background theme="off-rock" slot="main-content">
+        <body-text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusamus animi corporis cum deserunt dolor enim, et illo ipsa minus tempora unde vero? Assumenda cupiditate illum nemo quos voluptatem.</body-text>
+      </tile-background>
+    </frame-container>
   </div>
 </template>
 
@@ -46,13 +81,15 @@ import TileBackground from '../components/image/TileBackground'
 import BodyText from '../components/text/BodyText'
 import HeaderText from '../components/text/HeaderText'
 import PageDivider from '../components/PageDivider'
+import FrameContainer from '../components/FrameContainer.vue'
 
 export default {
   name: 'WebPrevious',
-  data() {
+  data () {
     return {}
   },
   components: {
+    FrameContainer,
     FireText,
     Marquee,
     Blink,
@@ -65,21 +102,9 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
-.tile-bg {
-  height: 500px;
-  color: white;
+<style>
+* {
+  box-sizing: border-box;
 }
 .marquee-example {
   width: 50%;

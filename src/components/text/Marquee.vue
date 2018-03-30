@@ -7,7 +7,16 @@
 <script>
 export default {
   name: 'Marquee',
-  props: ['behaviour', 'delay'],
+  props: {
+    behaviour: {
+      type: String,
+      default: 'scroll'
+    },
+    delay: {
+      type: String,
+      default: '3000'
+    }
+  },
   data () {
     return {
       BEHAVIOURS: {

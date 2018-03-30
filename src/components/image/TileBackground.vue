@@ -41,7 +41,8 @@ export default {
 <style>
 .tile-background {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
+  padding: 1.5rem 0;
   background-image: url('../../assets/space.gif');
   background-repeat: repeat;
 }

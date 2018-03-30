@@ -7,7 +7,12 @@
 <script>
 export default {
   name: 'Blink',
-  props: ['delay'],
+  props: {
+    delay: {
+      type: String,
+      default: '1000'
+    }
+  },
   data () {
     return {}
   },
