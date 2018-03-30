@@ -1,9 +1,9 @@
 <template>
   <section class="wbpv-frame-container" v-bind:class="containerClass">
-    <aside class="wbpv-frame" v-bind:class="frameClass">
+    <aside class="wbpv-frame" v-bind:class="frameClass" v-bind:style="{ height: pixelHeight }">
       <slot name="frame-content"></slot>
     </aside>
-    <div class="wbpv-frame-content"  v-bind:class="contentClass">
+    <div class="wbpv-frame-content"  v-bind:class="contentClass" ref="frameContent">
       <slot name="main-content"></slot>
     </div>
   </section>
@@ -23,10 +23,22 @@ export default {
       DIRECTIONS: {
         LEFT: 'left',
         RIGHT: 'right'
-      }
+      },
+      height: 0
+    }
+  },
+  mounted () {
+    this.setHeight()
+  },
+  methods: {
+    setHeight () {
+      this.height = this.$refs.frameContent.clientHeight
     }
   },
   computed: {
+    pixelHeight () {
+      return `${this.height}px`
+    },
     containerClass () {
       const options = {
         [this.DIRECTIONS.LEFT]: 'wbpv-frame-container-left',

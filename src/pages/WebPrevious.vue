@@ -67,6 +67,7 @@
       </tile-background>
       <tile-background theme="off-rock" slot="main-content">
         <body-text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusamus animi corporis cum deserunt dolor enim, et illo ipsa minus tempora unde vero? Assumenda cupiditate illum nemo quos voluptatem.</body-text>
+        <body-text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusamus animi corporis cum deserunt dolor enim, et illo ipsa minus tempora unde vero? Assumenda cupiditate illum nemo quos voluptatem.</body-text>
       </tile-background>
     </frame-container>
   </div>
