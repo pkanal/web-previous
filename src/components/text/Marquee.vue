@@ -70,14 +70,14 @@ export default {
 }
 @keyframes scroll {
   0% {
-    -moz-transform: translateX(100%); /* Browser bug fix */
-    -webkit-transform: translateX(100%); /* Browser bug fix */
-    transform: translateX(100%);
+    -moz-transform: translateX(140%); /* Browser bug fix */
+    -webkit-transform: translateX(140%); /* Browser bug fix */
+    transform: translateX(140%);
   }
   100% {
-    -moz-transform: translateX(-100%); /* Browser bug fix */
-    -webkit-transform: translateX(-100%); /* Browser bug fix */
-    transform: translateX(-100%);
+    -moz-transform: translateX(-140%); /* Browser bug fix */
+    -webkit-transform: translateX(-140%); /* Browser bug fix */
+    transform: translateX(-140%);
   }
 }
 
