@@ -22,6 +22,7 @@ export default {
   },
   computed: {
     midiFile() {
+      console.log('hello: ')
       const midiFiles = {
         [this.THEMES.COOL]: 'xfiles.mid',
         [this.THEMES.FANTASY]: 'sarias-song.mid',

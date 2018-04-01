@@ -74,11 +74,20 @@
       <body-text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusamus animi corporis cum deserunt dolor enim, et illo ipsa minus tempora unde vero? Assumenda cupiditate illum nemo quos voluptatem.</body-text>
     </tile-background>
   </frame-container>
+  <h1>Autoplay Midi</h1>
+  <midi theme="fantasy"></midi>
+  <ul>
+    Options
+    <li>fantasy</li>
+    <li>cool</li>
+    <li>professional</li>
+    <li>fun</li>
+    <li>wise</li>
+  </ul>
 </div>
 </template>
 
 <script>
-
 import FireText from '../components/text/FireText'
 import Marquee from '../components/text/Marquee'
 import Blink from '../components/text/Blink'
@@ -88,10 +97,11 @@ import HeaderText from '../components/text/HeaderText'
 import PageDivider from '../components/PageDivider'
 import FrameContainer from '../components/FrameContainer.vue'
 import UnderConstruction from '../components/image/UnderConstruction.vue'
+import Midi from '../components/audio/Midi.vue'
 
 export default {
   name: 'WebPrevious',
-  data () {
+  data() {
     return {}
   },
   components: {
@@ -103,7 +113,8 @@ export default {
     TileBackground,
     BodyText,
     HeaderText,
-    PageDivider
+    PageDivider,
+    Midi
   }
 }
 </script>
