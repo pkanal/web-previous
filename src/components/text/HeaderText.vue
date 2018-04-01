@@ -26,7 +26,13 @@ export default {
     }
   },
   computed: {
+<<<<<<< HEAD
     fontFamily () {
+=======
+    fontFamily() {
+      // console.log('MIDIjs: ', MIDIjs)
+      // MIDIjs.play(require('../../assets/xfiles.mid'))
+>>>>>>> 🎵 AUTOPLAY MIDI
       const fonts = {
         [this.THEMES.FUN]: 'Comic Sans MS, Comic Sans',
         [this.THEMES.PROFESSIONAL]: 'Times New Roman',
