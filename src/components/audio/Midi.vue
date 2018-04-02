@@ -1,5 +1,3 @@
-<template></template>
-
 <script>
 export default {
   name: 'Midi',
@@ -22,7 +20,6 @@ export default {
   },
   computed: {
     midiFile() {
-      console.log('hello: ')
       const midiFiles = {
         [this.THEMES.COOL]: 'xfiles.mid',
         [this.THEMES.FANTASY]: 'sarias-song.mid',
@@ -34,7 +31,7 @@ export default {
       return require(`../../assets/${midiFiles[this.theme]}`)
     }
   },
-  //FIXME: load script in this component instead of index.html
+  // FIXME: load script in this component instead of index.html
   mounted() {
     MIDIjs.play(this.midiFile) // eslint-disable-line no-undef
   },
