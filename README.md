@@ -23,3 +23,11 @@ Trying to put together a cool personal homepage in a modern JavaScript framework
 * Page Divider
 * Frames (works with tiled backgrounds!)
 * Under Construction
+* Midi Player (~eXperImENtaL~)
+  * Fun
+  * Professional
+  * Fantasy
+  * Cool
+  * Wise
+
+You can see these components in action [here](https://pkanal.github.io/web-previous/)!
